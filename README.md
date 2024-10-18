@@ -4,13 +4,13 @@
 
 #### 1. Overview
 
-This project analyzes the MIMIC-III clinical database, which contains health data associated with critical care admissions. Specifically, the goal is to explore patient length of stay, readmission rates within 30 days, and the most common diagnoses for patients who were readmitted within 30 days. The analysis involves key data cleaning steps, feature engineering, and exploratory data analysis (EDA) using Pandas, Matplotlib, and Seaborn.
+This project analyzes the Medical Information Mart for Intensive Care (MIMIC-III) clinical database, which contains health data associated for critical care admissions. Specifically, the goal is to explore patient length of stay, readmission rates within 30 days, and the most common diagnoses for patients who were readmitted within 30 days. The analysis involves key data cleaning steps, feature engineering, and exploratory data analysis (EDA) using Pandas, Matplotlib, and Seaborn.
 
 #### 2. Data
 
 Dataset
 
-The Medical Information Mart for Intensive Care (MIMIC-III) is a large, freely accessible database comprising deidentified health data associated with over 40,000 critical care admissions at Beth Israel Deaconess Medical Center between 2001 and 2012. MIMIC-III aims to support a wide variety of analytic studies spanning epidemiology, clinical decision-rule improvement, resource utilization, and effective treatment research.
+The MIMIC-III is a large, freely accessible database comprising deidentified health data associated with over 40,000 critical care admissions at Beth Israel Deaconess Medical Center between 2001 and 2012. MIMIC-III aims to support a wide variety of analytic studies spanning epidemiology, clinical decision-rule improvement, resource utilization, and effective treatment research.
 
 The dataset is available from PhysioNet (https://physionet.org/content/mimiciii/1.4/) after completing required training in protecting human subjects research.
 
