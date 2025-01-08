@@ -1,5 +1,35 @@
 # Hospital-Readmissions
 
+### Problem Statement
+
+Hospital re-admissions within 30 days are costly and indicate potential gaps in patient care.
+
+### Solution Approach:
+
+Data: MIMIC-III clinical database, containing critical care admission records.
+
+Methods:
+- Feature selection to identify key predictors (e.g., hypertension, age).
+- Logistic Regression and Random Forest for prediction.
+- Visualized re-admission trends by demographic and condition.
+- Tools: Python (Pandas, Seaborn), Tableau.
+
+### Results: 
+
+Predicted re-admissions with an accuracy of 82%, identifying high-risk groups (e.g., men with hypertension).
+
+### Challenges: 
+
+Handling large-scale data and feature extraction from unstructured records.
+
+### Future Directions: 
+
+Expand analysis to include socio-economic factors affecting re-admissions.
+
+### Key Skills: 
+
+Data analysis, predictive modeling, healthcare analytics, Python.
+
 ### Summary and Recommendations
 
 #### 1. Overview
