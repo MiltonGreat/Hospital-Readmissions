@@ -2,55 +2,57 @@
 
 ### Problem Statement
 
-Hospital re-admissions within 30 days are costly and indicate potential gaps in patient care.
+Unplanned hospital readmissions within 30 days signal deficiencies in post-discharge care and result in increased financial strain on healthcare systems. The project aims to predict readmission risks, enabling healthcare providers to focus on preventative care for high-risk patients.
 
 ### Solution Approach:
 
-Data: MIMIC-III clinical database, containing critical care admission records.
+1. Data Cleaning and Preprocessing
+- Missing Data Handling: Imputation for incomplete records.
+- Feature Engineering: Extracted and encoded critical predictors such as hypertension, age, and gender.
+- Scaling: Normalized numeric variables to ensure model performance.
 
-Methods:
-- Feature selection to identify key predictors (e.g., hypertension, age).
-- Logistic Regression and Random Forest for prediction.
-- Visualized re-admission trends by demographic and condition.
-- Tools: Python (Pandas, Seaborn), Tableau.
+2. Exploratory Data Analysis (EDA)
+- Investigated readmission trends by demographics, length of stay, and common diagnoses.
+- Visualized the impact of age, gender, and conditions on readmission rates.
 
-### Results: 
+3. Model Development
+- Algorithms Tested: Logistic Regression and Random Forest.
+- Feature Selection: Prioritized variables such as comorbidities, hypertension, and age.
+- Hyperparameter Tuning: GridSearchCV to optimize Random Forest parameters.
 
-Predicted re-admissions with an accuracy of 82%, identifying high-risk groups (e.g., men with hypertension).
+4. Evaluation Metrics
+- Prediction Accuracy: Achieved 82% accuracy.
+- Other Metrics: Precision, recall, and F1-score validated model reliability.
+
+### Key Findings:
+
+Readmission Rate:
+- Overall readmission rate: 8.33%.
+- Highest among men with hypertension.
+
+Length of Stay (LOS):
+- Longer hospital stays were correlated with a reduced risk of readmission.
+
+Age and Readmission:
+- Older patients showed a slightly higher likelihood of readmission, requiring tailored post-discharge care.
+
+Common Diagnoses:
+- Top diagnoses among readmitted patients included hypertension, congestive heart failure, and urinary tract infections.
 
 ### Challenges: 
 
-Handling large-scale data and feature extraction from unstructured records.
+- Handling Large-Scale Data: Optimized feature extraction from extensive and partially unstructured records.
+
+- Class Imbalance: Managed through SMOTE to ensure robust model predictions for minority classes.
 
 ### Future Directions: 
 
-Expand analysis to include socio-economic factors affecting re-admissions.
+- Expand Analysis: Incorporate socio-economic factors and insurance data to understand external influences on readmission.
+- Real-Time Monitoring: Develop real-time predictive systems for immediate interventions.
+- Model Explainability: Use SHAP or LIME to enhance interpretability for clinical stakeholders.
+- Bias Audits: Evaluate and mitigate potential biases affecting demographic groups.
 
-### Key Skills: 
 
-Data analysis, predictive modeling, healthcare analytics, Python.
-
-### Summary and Recommendations
-
-#### 1. Overview
-
-This project analyzes the Medical Information Mart for Intensive Care (MIMIC-III) clinical database, which contains health data associated for critical care admissions. Specifically, the goal is to explore patient length of stay, readmission rates within 30 days, and the most common diagnoses for patients who were readmitted within 30 days. The analysis involves key data cleaning steps, feature engineering, and exploratory data analysis (EDA) using Pandas, Matplotlib, and Seaborn.
-
-#### 2. Data
-
-Dataset
-
-The MIMIC-III is a large, freely accessible database comprising deidentified health data associated with over 40,000 critical care admissions at Beth Israel Deaconess Medical Center between 2001 and 2012. MIMIC-III aims to support a wide variety of analytic studies spanning epidemiology, clinical decision-rule improvement, resource utilization, and effective treatment research.
-
-The dataset is available from PhysioNet (https://physionet.org/content/mimiciii/1.4/) after completing required training in protecting human subjects research.
-
-#### 3. Data Analysis Steps
-
-1. Data Extraction and Loading
-2. Data Preprocessing
-3. Readmission Analysis
-4. Exploratory Data Analysis (EDA)
-5. Common Diagnoses for Readmitted Patients
 
 #### 6. Key Findings
       
