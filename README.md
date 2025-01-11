@@ -1,4 +1,8 @@
-# Hospital-Readmissions
+# Hospital-Readmissions: Predicting and Mitigating 30-Day Readmission Risks
+
+## Overview
+
+Hospital readmissions within 30 days are a critical issue, representing gaps in patient care and contributing to higher healthcare costs. Using the MIMIC-III clinical database, this project developed predictive models to identify high-risk patients and provided actionable insights for targeted interventions. Key findings include identifying men with hypertension as the group most prone to readmissions and achieving an 82% prediction accuracy.
 
 ### Problem Statement
 
